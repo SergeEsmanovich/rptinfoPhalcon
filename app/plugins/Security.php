@@ -53,7 +53,7 @@ class Security extends Plugin
 				'session' => array('index', 'register', 'start', 'end'),
 				'contact' => array('index', 'send'),
                                 'admin' => array('index'),
-                            'korol' => array('index'),
+                            'socialarticle' => array('index'),
                             'test' => array('index')
 			);
 			foreach ($publicResources as $resource => $actions) {

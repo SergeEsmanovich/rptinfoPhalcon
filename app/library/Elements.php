@@ -28,7 +28,7 @@ class Elements extends Phalcon\Mvc\User\Component {
             'admin' => array(
                 'caption' => 'Admin',
                 'action' => 'index'),
-            'korol' => array(
+            'socialarticle' => array(
                 'caption' => 'Korol',
                 'action' => 'index'),
             'test' => array(
@@ -78,7 +78,7 @@ class Elements extends Phalcon\Mvc\User\Component {
 
         $menu = Menu::find($where);
 
-
+$social_article = SocialArticle::find();
 
         $headmenu;
         foreach ($menu as $k => $v) {

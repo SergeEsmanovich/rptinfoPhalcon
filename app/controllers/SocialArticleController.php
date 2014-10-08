@@ -1,10 +1,10 @@
 <?php
 
-class KorolController extends ControllerBase
+class SocialArticleController extends ControllerBase
 {
     public function initialize()
     {
-        $this->tag->setTitle('Korol');
+        $this->tag->setTitle('Статьи');
         parent::initialize();
     }
 
