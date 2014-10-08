@@ -1,0 +1,428 @@
+section.training-page{
+	.border_box;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-top:35px;
+	nav.head{
+		.border_box;
+		.border_radius_4(5px,5px,0,0);
+		.box_shadow(0,0,2px,#333);
+		position: absolute;
+		top:0;
+		width: 100%;
+		background:#00639d;
+		overflow: hidden;
+		ul{
+			.ul-clean;
+			overflow: hidden;
+			li{
+				.fll(auto);
+				&.active{
+					.box_shadow_inset(0px,0px,10px,#004974);
+				}
+				&:hover{
+					.box_shadow_inset(0px,0px,10px,#00507f);
+				}
+				a{
+					display: block;
+					padding: 8px 14px;
+					color:#fff;
+					&:hover{
+						text-decoration: none;
+					}
+					&.awesome{
+						font-size:18px;
+					}
+				}
+			}
+		}
+	}
+	section.content{
+		.border_box;
+		.border_radius_4(0,0,6px,6px);
+		.box_shadow(0,0,2px,#333);
+		position: relative;
+		background: #fff;
+		padding: 0px 10px;
+		width:100%;
+		height:100%;
+		.top{
+			position: relative;
+			overflow: hidden;
+			padding:0 90px;
+			.profile-block{
+				position: relative;
+				float: left;
+				overflow: hidden;
+				width: 25%;
+				margin-top: 50px;
+				.img-container{
+					.border_radius_4(4px,4px,0,0);
+					overflow: hidden;
+					position: relative;
+					width: 100%;
+					img{
+						width: 100%;
+						display: block;
+					}
+				}
+				.profile-buttons{
+					.border_radius_4(0,0,4px,4px);
+					width: auto;
+					float: left;
+					position: relative;
+					background: #e2ecef;
+					a{
+						color:#00639d;
+						text-decoration: none;
+						display: block;
+						float: left;
+						position: relative;
+						padding: 10px 15px;
+						font-size:2.0rem;
+						&:hover{
+							color:#00639d - #222;
+						}
+					}
+				}
+			}
+			.training-description{
+				position: relative;
+				float: left;
+				overflow: hidden;
+				margin-top: 50px;
+				width: 35%;
+				margin-left: 2%;
+				.trainer{
+					h3{
+						font-size:1.6rem;
+						color:#555;
+					}
+					p.level{
+						color:#999999;
+						margin-top: 5px;
+						i{
+							margin-right: 5px;
+						}
+					}
+				}
+				table{
+					margin-top: 10px;
+					tr{
+						td{
+							padding:6px 5px;
+							&.key{
+								font-weight:bold;
+								text-align: right;
+							}
+							&.value{
+								text-align: left;
+								padding-left: 10px;
+								color:#777777;
+							}
+						}
+					}
+				}
+			}
+			.training-schedule{
+				position: relative;
+				float: left;
+				overflow: hidden;
+				margin-top: 50px;
+				margin-left: 2%;
+				width: 35%;
+				.item{
+					position: relative;
+					margin-bottom: 10px;
+					p{
+						width: 100%;
+						text-align: center;
+						&.name{
+							color:#555555;
+							font-weight:bold;
+						}
+						&.period{
+							font-size:1.1rem;
+							color:#777777;
+						}
+						&.time{
+							font-size:1.1rem;
+							color:#777777;
+						}
+					}
+				}
+			}
+		}
+		
+		.social{
+			position: relative;
+			float: right;
+			overflow: hidden;
+			& > .social-icon{
+				.border_radius(100px);
+				background: #cccccc;
+				position: relative;
+				float: right;
+				width: 40px;
+				text-align: center;
+				height: 40px;
+				margin-left: 4px;
+				color:#fff;
+				font-size:1.4rem;
+				cursor: pointer;
+				&:hover{
+					background: #999;
+					&#email{background:#db4a38}
+					&#vk{background:#597b9f}
+					&#tw{background:#55acee}
+					&#li{background:#0073b2}
+					&#fb{background:#3b5998}
+					&#gp{background:#d73d32}
+				}
+				i{
+					line-height:40px;
+				}
+			}
+			.likes-count{
+				position: relative;
+				float: right;
+				font-size:1.8rem;
+				margin-top: 11px;
+				margin-right: 5px;
+				color:#cccccc;
+			}
+		}
+		.trainings-cost{
+			position: relative;
+			overflow: hidden;
+			margin-top: 80px;
+			.item{
+				.border_box;
+				.border_radius(4px);
+				overflow: hidden;
+				border:solid 1px #d6d6d6;
+				position: relative;
+				float: left;
+				width: 32%;
+				margin-left: 2%;
+				&:first-child{
+					margin-left: 0;
+				}
+				h2.name{
+					display: block;
+					position: relative;
+					width: 100%;
+					text-align: center;
+					background: #e2ecef;
+					color:#00639d;
+					font-weight:bold;
+					font-size:1.6rem;
+					padding:8px 0;
+				}
+				& > div{
+					color:#555555;
+					overflow: hidden;
+					width: 80%;
+					margin:auto;
+					padding-top:20px;
+					padding-bottom: 20px;
+					p.item-label{
+						font-weight:normal;
+						font-size:1.5rem;
+						text-align: center;
+						margin:0 auto 20px auto;
+					}
+					p.old-price{
+						color:#999999;
+						font-size:1.1rem;
+						text-align: center;
+						text-decoration: line-through;
+					}
+					div.new-price{
+						position: relative;
+						float: left;
+						left: 50%;
+						.new-price-wrapper{
+							position: relative;
+							float: right;
+							right: 50%;
+							p.value{
+								text-align: center;
+								width: 100%;
+								font-weight:bold;
+								font-size:4.8rem;
+								line-height:135%;
+							}
+							p.currency{
+								display: block;
+								position: relative;
+								float: right;
+								margin-top: -10px;
+							}
+						}
+					}
+					p.overdate{
+						clear:both;
+						text-align: center;
+						margin:20px auto;
+						display: block;
+						color:#777;
+						font-size:1.1rem;
+					}
+					a.submit{
+						.border_radius(5px);
+						color:#fff;
+						display: block;
+						position: relative;
+						width: 60%;
+						padding:6px 14px;
+						margin:auto;
+						background:#4cbbe9;
+						text-align: center;
+						&:hover{
+							background:#4cbbe9 - #222;
+							text-decoration: none;
+						}
+					}
+				}
+				.full-payment-block{
+					
+				}
+				.reservation-block{
+					border-top:solid 1px #cccccc;
+				}
+			}
+		}
+		div.training-content{
+			position: relative;
+			overflow: hidden;
+			padding:0 80px;
+			margin-top: 50px;
+		}
+		section.reviews{
+			position: relative;
+			width: 100%;
+			min-height:620px;
+			background:url('../images/reviews-bg.jpg') center bottom no-repeat;
+			background-size: cover;
+			padding:30px 0;
+			h3{
+				position: relative;
+				line-height:130%;
+				padding:20px auto;
+				text-align: center;
+				color:#555;
+				font-size:1.8rem;
+				font-weight:200;
+			}
+			.reviews-slider{
+				position: relative;
+				width: 100%;
+				min-width:450px;
+				//height: 420px;
+				margin: auto;
+				.controls{
+					.border_box;
+					padding-right: 20px;
+					padding-left: 20px;
+					position: absolute;
+					width: 100%;
+					top:50%;
+					margin-top: -13px;
+					.arrow{
+						position: relative;
+						width: 16px;
+						height: 27px;
+						position: relative;
+						cursor:pointer;
+						&#leftarrow{
+							float: left;
+							background:url('../images/left-arrow.png') no-repeat;
+						}
+						&#rightarrow{
+							float: right;
+							background:url('../images/right-arrow.png') no-repeat;
+						}
+					}
+				}
+				.reviews-container{
+					position: relative;
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					height: 100%;
+					overflow: hidden;
+					.reviews-wrapper{
+						position: relative;
+						width: auto;
+						height: 100%;
+						.reviews-slide{
+							position: relative;
+							float: left;
+							width: 100%;
+							height: 100%;
+							.item{
+								overflow: hidden;
+								position: relative;
+								margin: 10px auto;
+								padding: 10px 0;
+								color:#fff;
+								.img-container{
+									.fll(80px);
+									.border_radius(100px);
+									.box_shadow(3px,3px,6px,#0b2530);
+									overflow: hidden;
+									margin-top: 10px;
+									img{
+										display: block;
+									}
+								}
+								.item-description{
+									.fll(auto);
+									.border_radius(12px);
+									.border_box;
+									margin-left:30px;
+									
+									overflow: visible;
+									padding:15px 20px;
+									background:url('../images/reviews-item-bg.png') center center;
+									.quote-arrow{
+										position: absolute;
+										width: 14px;
+										height: 28px;
+										left:-14px;
+										top:35px;
+										background:url('../images/reviews-item-quote-arrow.png') no-repeat center center;
+									}
+									p.item-content{
+
+									}
+									p.item-author{
+										font-weight:bold;
+										font-size:1.6rem;
+										margin:5px 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			a.submit{
+				.border_radius(4px);
+				background:#4cbbe9;
+				color:#fff;
+				width: 25%;
+				display: block;
+				margin:20px auto;
+				padding:6px 14px;
+				text-align: center;
+				&:hover{
+					text-decoration: none;
+					background: #4cbbe9 - #222;
+				}
+			}
+		}
+	}
+}

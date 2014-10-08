@@ -1,0 +1,144 @@
+.events-page{
+	.border_box;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-top:35px;
+	nav.head{
+		.border_box;
+		.border_radius_4(5px,5px,0,0);
+		.box_shadow(0,0,2px,#333);
+		position: absolute;
+		top:0;
+		width: 100%;
+		background:#00639d;
+		overflow: hidden;
+		ul{
+			.ul-clean;
+			overflow: hidden;
+			li{
+				.fll(auto);
+				&.active{
+					.box_shadow_inset(0px,0px,10px,#004974);
+				}
+				&:hover{
+					.box_shadow_inset(0px,0px,10px,#00507f);
+				}
+				a{
+					display: block;
+					padding: 8px 14px;
+					color:#fff;
+					&:hover{
+						text-decoration: none;
+					}
+					&.awesome{
+						font-size:1.8rem;
+					}
+				}
+			}
+		}
+	}
+	section.content{
+		.border_box;
+		.border_radius_4(0,0,6px,6px);
+		.box_shadow(0,0,2px,#333);
+		position: relative;
+		background: #fff;
+		padding: 10px 20px;
+		width:100%;
+		height:100%;
+		.select2-container{
+			&#s2id_fTname{
+				width: 200px;
+			}
+			&#s2id_fTrainer, &#s2id_fTrainer4{
+				width: 150px;
+			}
+		}
+		.filter{
+			position: relative;
+			margin: auto;
+			width: 80%;
+			margin-top: 10px;
+			margin-bottom: 40px;
+			overflow: hidden;
+			label{
+				display: block;
+				margin-bottom: 5px;
+			}
+			.field{
+				position: relative;
+				float: left;
+				margin-right: 2%;
+				width: 25%;
+				.select2-container{
+					width: 100% !important;
+				}
+				&.city{
+					width: 20%;
+				}
+				&.trainer{
+
+				}
+				&.name{
+					width: 32%;
+				}
+				&.submit{
+					width: 15%;
+					input{
+						.border_radius(4px);
+						color:#fff;
+						padding:6px 0;
+						width: 100%;
+						border:none;
+						background: #4cbbe9;
+						margin-top: 22px;
+						&:hover{
+							background: #4cbbe9 - #222;
+						}
+					}
+				}
+				input{
+					width: 100%;
+				}
+			}
+		}
+		.trainings-list{
+			border-collapse:collapse;
+			width: 100%;
+			td,th{
+				color:#333;
+				padding:10px 6px;
+				&.signup{
+					width: 10%;
+					a{
+						
+						text-decoration: none;
+						color:#555;
+						font-size: 1.6rem;
+						&:hover{
+							color:#13639a;
+						}
+					}
+				}
+			}
+			thead{
+				&.head{
+					th{
+						background: none !important;
+						text-align: center;
+					}
+				}
+				&.month{
+					th{
+						text-align: center;
+						background: #e2ecef;
+					}
+				}
+			}
+			tbody{
+
+			}
+		}
+	}
+}
