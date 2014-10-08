@@ -42,6 +42,37 @@ class Elements extends Phalcon\Mvc\User\Component {
             ),
         )
     );
+    
+       private $leftMenu = array(
+        
+            'index' => array(
+                'caption' => 'Home',
+                'action' => 'index'
+            ),
+            'invoices' => array(
+                'caption' => 'Invoices',
+                'action' => 'index'
+            ),
+            'about' => array(
+                'caption' => 'About',
+                'action' => 'index'
+            ),
+            'contact' => array(
+                'caption' => 'Contact',
+                'action' => 'index'
+            ),
+            'admin' => array(
+                'caption' => 'Admin',
+                'action' => 'index'),
+            'socialarticle' => array(
+                'caption' => 'Korol',
+                'action' => 'index'),
+            'test' => array(
+                'caption' => 'Test',
+                'action' => 'index')
+    );
+    
+    
     private $_tabs = array(
         'Invoices' => array(
             'controller' => 'invoices',
