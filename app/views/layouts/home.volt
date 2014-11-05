@@ -5,13 +5,13 @@
         {{ get_title() }}
         {{ javascript_include('js/jquery.min.js') }}
 
-        {{ javascript_include('templates/home/js/select2.min.js') }}
+        {#{ javascript_include('templates/home/js/select2.min.js') }#}
         {#{ javascript_include('templates/home/js/responsive.js') }#}
         {{ javascript_include('templates/home/js/navigation.js') }}
-        {{ javascript_include('templates/home/js/slider.js') }}
+        {#{ javascript_include('templates/home/js/slider.js') }#}
         {#Бутстрап 3#}
-        {{ javascript_include('bootstrap/js/bootstrap.min.new.js') }}
-        {{ stylesheet_link('bootstrap/css/bootstrap.min.css') }}
+        {{ javascript_include('templates/home/js/bootstrap.min.js') }}
+        {{ stylesheet_link('templates/home/css/bootstrap.css') }}
         {{ stylesheet_link('css/font-awesome.min.css') }}
         {{ stylesheet_link('templates/home/css/style.css') }}
 

@@ -1,4 +1,3 @@
-!function($){
 	$(document).ready(function(){
 		var slider = $('div.slider');
 		var slides = slider.find('.slide');
@@ -50,4 +49,3 @@
 			});
 		}
 	});
-}(jQuery);
