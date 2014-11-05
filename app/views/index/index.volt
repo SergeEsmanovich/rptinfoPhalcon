@@ -9,14 +9,14 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 					<div class="item active">
-						<a href="http://quickpage.dowlatow.ru/wppage/rpt-3/" target="_blank"><img src="" /></a>
+						<a href="http://quickpage.dowlatow.ru/wppage/rpt-3/" target="_blank"><img src="/templates/home/images/slider/01.jpg" /></a>
 					 
 					</div>
 					<div class="item">
-						<a href="http://www.rptinfo.ru/ak/ak_buy_goods.php?idg=3" target="_blank"><img src="" /></a>
+						<a href="http://www.rptinfo.ru/ak/ak_buy_goods.php?idg=3" target="_blank"><img src="/templates/home/images/slider/02.jpg" /></a>
 					</div>
 					<div class="item">
-						<a href="/trainings/2" target="_blank"><img src="" /></a>
+						<a href="/trainings/2" target="_blank"><img src="/templates/home/images/slider/03.jpg" /></a>
 					</div>
 			  </div>
 
@@ -59,7 +59,7 @@
         </section>
         <section class="promo-blocks">
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-01-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-01-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#349931">Здоровье</h2>
                         <h3>Подлинное исцеление себя и других</h3>
@@ -112,7 +112,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -125,7 +125,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -139,7 +139,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-02-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-02-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#9c0534">Отношения</h2>
                         <h3>Гармония без стресса</h3>
@@ -190,7 +190,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -203,7 +203,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -217,7 +217,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-03-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-03-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#e12c2c">Семья</h2>
                         <h3>Надежный фундамент и сила рода</h3>
@@ -266,7 +266,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -279,7 +279,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -293,7 +293,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-04-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-04-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#0b5f8c">Финансы и карьера</h2>
                         <h3>Растущее благосостояние</h3>
@@ -342,7 +342,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -355,7 +355,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -369,7 +369,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-05-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-05-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#06547c">Личностный рост</h2>
                         <h3>Осмысленное развитие</h3>
@@ -419,7 +419,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -432,7 +432,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -446,7 +446,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-06-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-06-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#51305d">духовность</h2>
                         <h3>Пространство истинных ценностей</h3>
@@ -493,7 +493,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -506,7 +506,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -520,7 +520,7 @@
                  </div>
             </div>
             <div class="item promo-block">
-                <div class="block-content" style="background-image:url(../images/promo/promo-block-07-bg.jpg);">
+                <div class="block-content" style="background-image:url(templates/home/images/promo/promo-block-07-bg.jpg);">
                     <div class="wrapper">
                         <h2 style="color:#e8af01">Отдых</h2>
                         <h3>Наслаждение моментом</h3>
@@ -570,7 +570,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -583,7 +583,7 @@
                          <div class="review">
                             <div class="border-wrapper">
                                 <div class="author-photo">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>    
                                 <div class="review-content">
                                     <p class="review-text">
@@ -690,7 +690,7 @@
                         <div class="reviews-slide">
                             <div class="item">
                                 <div class="img-container smart-float">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>
                                 <div class="item-description">
                                     <div class="quote-arrow"></div>
@@ -701,7 +701,7 @@
                             </div>
                              <div class="item">
                                 <div class="img-container smart-float">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>
                                 <div class="item-description">
                                     <div class="quote-arrow"></div>
@@ -712,7 +712,7 @@
                             </div>
                              <div class="item">
                                 <div class="img-container smart-float">
-                                    <img src="/images/author.jpg" />
+                                    <img src="templates/home/images/author.jpg" />
                                 </div>
                                 <div class="item-description">
                                     <div class="quote-arrow"></div>
