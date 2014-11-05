@@ -1,0 +1,56 @@
+/* 
+    Created on : 14.08.2014, 9:35:31
+    Author     : korolariya
+*/
+
+@mixin border-radius($radius,$border,$color) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    border:$border solid $color
+}
+
+@mixin shadow(){
+-webkit-box-shadow: inset 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    inset 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         inset 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+}
+
+@mixin rleft($radius){
+    -moz-border-radius-topleft: $radius;
+    -webkit-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;   
+}
+@mixin rright($radius){
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@mixin mybutton($bg,$color,$padding){
+    background:$bg;
+    color:$color;
+    padding:$padding;  
+}
+.center{
+    text-align: center;
+    
+} 
+.text{
+    padding:15px;
+}
+.transp_text{
+    malign:0 auto;
+}
+
+ 
+.tabs li.disabled {
+    background: #ccc !important;
+}

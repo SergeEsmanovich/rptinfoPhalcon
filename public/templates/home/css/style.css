@@ -1,0 +1,135 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font: 12px/18px Roboto, sans-serif;
+	height: 100%;
+        font-family: 'Roboto', sans-serif;
+}
+html {
+	height: 100%;
+}
+/* .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  
+  min-height: 90%;
+  height: auto !important;
+  height: 100%;
+} */
+.wrapper .row{
+	/*height:100%;*/
+	width:100%;
+}
+.wrapper .row:first-child{
+	/*height:0;*/
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header{
+	position:absolute;
+	z-index:2;
+    height: 60px;
+    width: 100%;
+    background: #13639a;
+    margin-bottom: 75px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+.login-form-container fieldset{
+	border:none !important;
+}
+
+#header a{
+	/*border:none !important;*/
+}
+#header a:hover{
+	color:#fff !important;
+	text-decoration: none !important;
+}
+
+.btn_header{
+    height: 100%;
+    color: #fff;
+font-size: 3.0rem;
+padding: 15px;
+cursor:pointer;
+}
+.btn_header.border_left{
+    border-left: 1px solid #0d4267;
+}
+.btn_header.border_right{
+    border-right: 1px solid #0d4267;
+}
+.logo{
+margin: 0 auto;
+width: 60px;
+}
+.logo a{
+display: block;    
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+.clear{
+clear:both;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.alert-message{
+    color:#fff;
+    background: #79bae7;
+     font-family: 'Roboto', sans-serif;
+}
+.training-name{
+line-height: 20px;
+}
