@@ -639,7 +639,7 @@
 
         <div style="clear:both"></div>
         <section class="schedule-wrapper">
-            <jdoc:include type="modules" name="raspis" />
+            
         </section>
         
         <section class="top10 hide">
@@ -672,7 +672,6 @@
             <p class="introtext">
                 Задача организации, в особенности же реализация намеченных плановых заданий способствует подготовке и реализации форм развития. Не следует, однако забывать, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.
             </p>
-             <jdoc:include type="modules" name="public_trener" style="none" />
 
             <a href="/article" class="view-all-publications">Посмотреть все публикации</a>
         </section>
