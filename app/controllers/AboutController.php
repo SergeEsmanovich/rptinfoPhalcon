@@ -7,8 +7,16 @@ class AboutController extends ControllerBase
         $this->tag->setTitle('About us');
         parent::initialize();
     }
-
+/**
+ * [indexAction description]
+ * @return [type]
+ */
     public function indexAction()
     {
+    	$test = array('test'=>1,'test2'=>12);
+    	$var = "test";
+    	$test = 1;
+ $tyt = 1; 
+    
     }
-}
+} 

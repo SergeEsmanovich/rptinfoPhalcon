@@ -161,6 +161,6 @@ class ProductsController extends ControllerBase
         } else {
             $this->flash->success("Products was deleted");
             return $this->forward("products/index");
-        }
+        }  
     }
 }

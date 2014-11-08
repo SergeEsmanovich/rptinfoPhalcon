@@ -8,6 +8,7 @@ class Menu extends Phalcon\Mvc\Model
    public $name;
     public function initialize()
     {
-        $this->belongsTo("controller", "Controllers", "id");
+        $this->belongsTo("controller_id", "Controllers", "id");
+        $this->belongsTo("modul_id", "Modules", "id");
     }
 }

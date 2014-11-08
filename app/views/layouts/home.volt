@@ -25,7 +25,7 @@
     </head>
     <body class="mainpage"  data-template="home">
         <nav class="sidebar">
-
+              {{elements.getModulMenu('leftmenu')}}
             <ul class="logout">
                 <li>
                     <a href="">Выйти из профиля</a>

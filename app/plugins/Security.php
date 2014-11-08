@@ -53,6 +53,7 @@ class Security extends Plugin
 				'session' => array('index', 'register', 'start', 'end'),
 				'contact' => array('index', 'send'),
                                 'admin' => array('index'),
+                                'news' => array('index'),
                             'socialarticle' => array('index'),
                             'test' => array('index')
 			);

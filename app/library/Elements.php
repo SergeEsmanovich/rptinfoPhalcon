@@ -42,37 +42,33 @@ class Elements extends Phalcon\Mvc\User\Component {
             ),
         )
     );
-    
-       private $leftMenu = array(
-        
-            'index' => array(
-                'caption' => 'Home',
-                'action' => 'index'
-            ),
-            'invoices' => array(
-                'caption' => 'Invoices',
-                'action' => 'index'
-            ),
-            'about' => array(
-                'caption' => 'About',
-                'action' => 'index'
-            ),
-            'contact' => array(
-                'caption' => 'Contact',
-                'action' => 'index'
-            ),
-            'admin' => array(
-                'caption' => 'Admin',
-                'action' => 'index'),
-            'socialarticle' => array(
-                'caption' => 'Korol',
-                'action' => 'index'),
-            'test' => array(
-                'caption' => 'Test',
-                'action' => 'index')
+    private $leftMenu = array(
+        'index' => array(
+            'caption' => 'Home',
+            'action' => 'index'
+        ),
+        'invoices' => array(
+            'caption' => 'Invoices',
+            'action' => 'index'
+        ),
+        'about' => array(
+            'caption' => 'About',
+            'action' => 'index'
+        ),
+        'contact' => array(
+            'caption' => 'Contact',
+            'action' => 'index'
+        ),
+        'admin' => array(
+            'caption' => 'Admin',
+            'action' => 'index'),
+        'socialarticle' => array(
+            'caption' => 'Korol',
+            'action' => 'index'),
+        'test' => array(
+            'caption' => 'Test',
+            'action' => 'index')
     );
-    
-    
     private $_tabs = array(
         'Invoices' => array(
             'controller' => 'invoices',
@@ -101,50 +97,33 @@ class Elements extends Phalcon\Mvc\User\Component {
         )
     );
 
-    public function getMenuType($type) {
+    public function getModulMenu($alias) {
 
         $where = array(
-            "bind" => array('menutype' => $type)
+            "bind" => array('alias' => $alias)
         );
 
-        $menu = Menu::find($where);
+        $modules = Modules::find($where);
+        ?>
+        <ul class="">
+           <?php
+            foreach($modules as $modul)
+                 foreach($modul->menu as $item)
+                {
+            
+                ?>
+            <li>
+                <?php
+                echo Phalcon\Tag::linkTo($item->controllers->name . '/' .'index',$item->icon.' '.$item->caption);
+                ?>
 
-$social_article = SocialArticle::find();
-
-        $headmenu;
-        foreach ($menu as $k => $v) {
-            $headmenu[$v->controllers->name] = array('caption' => $v->caption, 'action' => $v->action);
-        }
+            </li>
+                <?php };?>
+        </ul>
+        <?php
         echo '<pre>';
-        print_r($headmenu);
+       // print_r($modul[0]->menu[0]->caption);
         echo '</pre>';
-        /*
-          $auth = $this->session->get('auth');
-          if ($auth) {
-          $this->_headerMenu['pull-right']['session'] = array(
-          'caption' => 'Log Out',
-          'action' => 'end'
-          );
-          } else {
-          unset($this->_headerMenu['pull-left']['invoices']);
-          }
-
-          echo '<div class="nav-collapse">';
-          $controllerName = $this->view->getControllerName();
-          foreach ($this->_headerMenu as $position => $menu) {
-          echo '<ul class="nav ', $position, '">';
-          foreach ($menu as $controller => $option) {
-          if ($controllerName == $controller) {
-          echo '<li class="active">';
-          } else {
-          echo '<li>';
-          }
-          echo Phalcon\Tag::linkTo($controller . '/' . $option['action'], $option['caption']);
-          echo '</li>';
-          }
-          echo '</ul>';
-          }
-          echo '</div>'; */
     }
 
     /**

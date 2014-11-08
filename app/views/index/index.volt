@@ -618,7 +618,7 @@
 
         <section class="library">
             <div class="library-container">            
-                <jdoc:include type="modules" name="library" style="none" />
+                
                 <a href="/library" class="view-all-publications hide">Перейти в библиотеку RPT</a>
             </div>
         </section>
@@ -632,7 +632,7 @@
         </div>
         <section class="library">
             <div class="library-container">            
-                <jdoc:include type="modules" name="library2" style="none" />
+                
                 <a href="/library" class="view-all-publications hide">Перейти в библиотеку RPT</a>
             </div>
         </section>

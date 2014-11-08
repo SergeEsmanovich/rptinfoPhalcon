@@ -2,17 +2,23 @@
     Created on : 14.08.2014, 9:35:31
     Author     : korolariya
 */
-.center {
-  text-align: center; }
+.center
+{
+    text-align: center;
+}
 
-.text {
-  padding: 15px; }
+.text
+{
+    padding: 15px;
+}
 
-.transp_text {
-  malign: 0 auto; }
-<<<<<<< HEAD
-=======
+.transp_text
+{
+    malign: 0 auto;
+}
 
-.tabs li.disabled {
-  background: #ccc !important; }
->>>>>>> master
+
+.tabs li.disabled
+{
+    background: #ccc !important;
+}

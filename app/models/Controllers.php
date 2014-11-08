@@ -5,6 +5,6 @@ class Controllers extends Phalcon\Mvc\Model
    public $name;
    public function initialize()
     {
-        $this->hasMany("id", "Menu", "controller");
+        $this->hasMany("id", "Menu", "controller_id");
     }
 }
