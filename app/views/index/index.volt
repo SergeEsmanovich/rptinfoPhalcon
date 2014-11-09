@@ -1,35 +1,4 @@
- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-					<div class="item active">
-						<a href="http://quickpage.dowlatow.ru/wppage/rpt-3/" target="_blank"><img src="/templates/home/images/slider/01.jpg" /></a>
-					 
-					</div>
-					<div class="item">
-						<a href="http://www.rptinfo.ru/ak/ak_buy_goods.php?idg=3" target="_blank"><img src="/templates/home/images/slider/02.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="/trainings/2" target="_blank"><img src="/templates/home/images/slider/03.jpg" /></a>
-					</div>
-			  </div>
-
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
-		</div>
-      
-
+ {{elements.getSlider()}}
         <section class="facts">
             <h2>ФАКТЫ об RPT</h2>
             <div class="facts-content-container">
@@ -744,4 +713,4 @@
         </section>
     
 
-{{ content() }}
+

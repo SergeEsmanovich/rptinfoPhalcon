@@ -84,21 +84,21 @@ class Elements extends Phalcon\Mvc\User\Component {
         $actionName = $this->view->getActionName();
         ?>
         <ul class="">
-        <?php
-        foreach ($modules->menu as $item) {
-            if (($controllerName == $item->controllers->name)  &&  ($item->action == $actionName) ) {
-                echo '<li class="active">';
-            } else {
-                echo '<li>';
-            }
-            ?>
+            <?php
+            foreach ($modules->menu as $item) {
+                if (($controllerName == $item->controllers->name) && ($item->action == $actionName)) {
+                    echo '<li class="active">';
+                } else {
+                    echo '<li>';
+                }
+                ?>
 
                 <?php
                 echo Phalcon\Tag::linkTo($item->controllers->name . '/' . $item->action, $item->icon . ' ' . $item->caption);
                 ?>
 
             </li>
-            <?php }; ?>
+        <?php }; ?>
         </ul>
         <?php
     }
@@ -151,6 +151,41 @@ class Elements extends Phalcon\Mvc\User\Component {
             echo Phalcon\Tag::linkTo($option['controller'] . '/' . $option['action'], $caption), '<li>';
         }
         echo '</ul>';
+    }
+
+    public function getSlider() {
+        ?>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="http://quickpage.dowlatow.ru/wppage/rpt-3/" target="_blank"><img src="/templates/home/images/slider/01.jpg" /></a>
+
+                </div>
+                <div class="item">
+                    <a href="http://www.rptinfo.ru/ak/ak_buy_goods.php?idg=3" target="_blank"><img src="/templates/home/images/slider/02.jpg" /></a>
+                </div>
+                <div class="item">
+                    <a href="/trainings/2" target="_blank"><img src="/templates/home/images/slider/03.jpg" /></a>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <?php
     }
 
 }
