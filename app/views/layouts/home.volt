@@ -3,14 +3,17 @@
     <head>
         <meta charset="utf-8"/>
         {{ get_title() }}
-        {{ javascript_include('js/jquery.min.js') }}
-
+        {#{ javascript_include('js/jquery.min.js') }#}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
         {#{ javascript_include('templates/home/js/select2.min.js') }#}
         {#{ javascript_include('templates/home/js/responsive.js') }#}
         {{ javascript_include('templates/home/js/navigation.js') }}
-        {#{ javascript_include('templates/home/js/slider.js') }#}
+       
         {#Бутстрап 3#}
         {{ javascript_include('templates/home/js/bootstrap.min.js') }}
+        {{ javascript_include('templates/home/js/docs.min.js') }}
+      
         {{ stylesheet_link('templates/home/css/bootstrap.css') }}
         {{ stylesheet_link('css/font-awesome.min.css') }}
         {{ stylesheet_link('templates/home/css/style.css') }}
