@@ -10,6 +10,7 @@ class MessagesController extends ControllerBase
 
     public function indexAction()
     {
-    
+     //Тут возможно другой шаблон   
+      $this->view->setTemplateAfter('def');
     }
 } 
