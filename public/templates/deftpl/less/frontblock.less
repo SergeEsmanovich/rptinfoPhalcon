@@ -1,0 +1,82 @@
+button{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  background: none;
+  border:none;
+  font-size:1.6rem;
+  &:focus{
+   outline:none;
+  }
+  i{
+   &.fa-check-square-o{
+    color:#067b00;
+   }
+   &.fa-square-o{
+    color:#ffa2a2;
+   }
+   &.fa-times{
+    color:#c00000;
+   }
+  }
+}
+section.edit-article-page{
+  form{
+    padding-bottom: 30px;
+    label{
+      font-weight:bold;
+      margin:10px 0 10px 0;
+    }
+    input[name="name"]{
+      width: 100%;
+    }
+  }
+  .redactor_box{
+    margin:10px 0;
+  }
+  input[type="submit"]{
+    .border_radius(5px);
+    display: block;
+    position: relative;
+    float: left;
+    background:#00639d;
+    color:#fff;
+    margin-right: 10px;
+    border:none;
+    padding:6px 20px;
+    &:hover{
+      background:#00639d - #222;
+    }
+    & + a{
+      position: relative;
+      display: block;
+      float: left;
+      padding:6px 20px;
+    }
+  }
+}
+section.add-article-page{
+  table.lib{
+    tr{
+      th, td{
+        text-align: center;
+        &.number{
+          width: 20px;
+        }
+        &.teaser{
+          width: auto;
+        }
+        &.name{
+          width: auto;
+        }
+        &.control{
+          width: 200px !important;
+        }
+      }
+    }
+    nav.linemenu{
+      width: 100px;
+      margin:auto;
+    }
+  }
+}

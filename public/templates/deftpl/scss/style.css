@@ -1,0 +1,195 @@
+@charset "IBM866";
+/* 
+    Created on : 14.08.2014, 9:33:40
+    Author     : korolariya
+*/
+/* 
+    Created on : 14.08.2014, 9:35:31
+    Author     : korolariya
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,cyrillic);
+.center {
+  text-align: center; }
+
+.text {
+  padding: 15px; }
+
+.transp_text {
+  malign: 0 auto; }
+
+#groups tr td.icon .status .fa.fa-star.active {
+  color: #ffae00; }
+
+.inline {
+  display: inline-block; }
+
+.moderat nav.head li a span.fa.fa-cogs {
+  font-size: 17px; }
+
+.success .select2-choice {
+  background: green;
+  color: #fff; }
+
+.linemenu li {
+  display: inline-block; }
+
+.add-article-page section.content form.add-article .field.global .btn-group label {
+  width: 49%;
+  color: #fff; }
+
+.no_button {
+  border: none;
+  background: none; }
+
+.add_file_input {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc; }
+
+/* 
+    Created on : 18.08.2014, 13:38:34
+    Author     : korolariya
+*/
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden; }
+
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+  height: 100px; }
+
+.registration-page .select-country {
+  width: 100%; }
+
+.registration-page .cities {
+  width: 100%; }
+
+/* 
+    Created on : 19.08.2014, 12:37:53
+    Author     : korolariya
+*/
+.error404 {
+  background: #13639a; }
+
+/* 
+    Created on : 28.08.2014, 12:49:23
+    Author     : korolariya
+Модерация
+*/
+span.ico_new, span.ico_del, span.ico_comp, span.ico_red {
+  width: 17px;
+  height: 17px;
+  background: url(../images/moderate.png);
+  display: inline-block; }
+  span.ico_new.white, span.white.ico_del, span.white.ico_comp, span.white.ico_red {
+    background-position-y: -17px; }
+
+span.ico_del {
+  background-position-x: -17px; }
+
+span.ico_comp {
+  background-position-x: -34px; }
+
+span.ico_red {
+  background-position-x: -51px; }
+
+.btn-check {
+  color: #777777;
+  background: url(../images/button_check.png);
+  padding: 5px 16px 10px 16px; }
+  .btn-check:hover {
+    text-decoration: none;
+    color: #777777; }
+  .btn-check i {
+    margin-left: 5px; }
+
+li > a > text {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif; }
+
+li > a > i.fa.fa-inbox {
+  font-size: 20px; }
+
+li > span.level {
+  display: block;
+  padding: 8px 14px;
+  color: #fff; }
+
+div.title_mod {
+  color: #00639d;
+  background: #e2ecef;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif; }
+
+table.table.education td {
+  text-align: left;
+  border: none; }
+  table.table.education td li {
+    padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif; }
+
+.in_shadow_top {
+  -webkit-box-shadow: inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5); }
+
+.registration-page section.content {
+  padding: 0px; }
+
+.buttons {
+  padding: 10px;
+  padding-left: 0px; }
+  .buttons a.applay, .buttons a.miss, .buttons a.send_mes {
+    background: url(../images/applay.png);
+    background-repeat: no-repeat;
+    padding: 5px 25px 10px 25px;
+    color: #fff;
+    display: inline-block; }
+    .buttons a.applay:hover, .buttons a.miss:hover, .buttons a.send_mes:hover {
+      text-decoration: none;
+      background-position-y: -34px; }
+    .buttons a.applay:active, .buttons a.miss:active, .buttons a.send_mes:active, .buttons a.applay.active, .buttons a.active.miss, .buttons a.active.send_mes {
+      background-position-y: -68px; }
+  .buttons a.miss {
+    background: url(../images/miss.png);
+    padding: 5px 22px 10px 22px; }
+  .buttons a.send_mes {
+    background: url(../images/submit.png);
+    padding: 5px 15px 10px 15px; }
+
+/*Модерация статей*/
+table.lib tr td {
+  font-size: 14px;
+  text-align: left;
+  vertical-align: middle; }
+  table.lib tr td:first-child {
+    width: 80px; }
+  table.lib tr td:nth-child(3) {
+    width: 80px; }
+  table.lib tr td:nth-child(4) {
+    width: 540px; }
+
+/*
+Добавление тренингов
+*/
+/* 
+    Created on : 23.10.2014, 16:36:11
+    Author     : korolariya
+*/
+input[type="text"]:disabled, textarea:disabled {
+  background: #eee;
+  border-color: #ccc; }

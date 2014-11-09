@@ -10,6 +10,10 @@ class PubsController extends ControllerBase
 
     public function indexAction()
     {
-    
+     $this->view->setTemplateAfter('def');
+    }
+     public function add_articleAction()
+    {
+     $this->view->setTemplateAfter('def');
     }
 } 

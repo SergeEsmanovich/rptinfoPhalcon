@@ -1,0 +1,176 @@
+.content.newtraining{
+	font-size:1.1rem !important;
+	form.addtraining{
+		padding:40px 0;
+		position: relative;
+		color:#555555;
+		input.datetimepicker{
+			background: url('../images/calendar-icon.png') 98% center no-repeat;
+		}
+		h2{
+			width: 120%;
+			padding:8px;
+			display: block;
+			background: #e2ecef;
+			font-weight:bold;
+			margin:40px auto 20px -20px;
+		}
+		.field{
+			.border_box;
+			position: relative;
+			width: 100%;
+			margin: 0 0 20px 0;
+			overflow: hidden;
+			label{
+				width: 15%;
+				text-align: right;
+				font-weight:bold;
+				display: block;
+				float: left;
+			}
+			input,.select2-container, select{
+				display: block;
+				float: left;
+				width: 75%;
+				margin-left: 2%;
+			}
+			&.half{
+				width: 50%;
+				float: left;
+				label{
+					width: 30%;
+				}
+				input,.select2-container, select{
+					display: block;
+					float: left;
+					width: 50%;
+					margin-left: 4%;
+				}
+			}
+			&.description{
+				.redactor-container{
+					position: relative;
+					float: left;
+					width: 80%;
+					margin-left: 2%;
+				}
+			}
+			&.image{
+				a#training-img{ 
+					.border_radius(4px);
+					margin-left: 2%;
+					width: 50%;
+					min-height: 240px;
+					display: block;
+					float: left;
+					vertical-align: center;
+					border-radius: 5px;
+					position: relative;
+					margin-bottom: 16px;
+					border:solid 1px #4cbbe9;
+					text-align: center;
+					i{
+						color:#4cbbe9;
+						line-height:240px;
+					}
+				}
+				#profilepage__img-btns{
+					display: block;
+					float:left;
+				    vertical-align: top;
+					margin-left: 20px;
+					.profilepage_btn{
+					    color: #fff;
+					    display: inline-block;
+					    padding: 5px 15px;
+						border-radius: 5px;	
+						border:1px solid;	
+					    background-color: #4cbbe9;
+						border-color: #4cbbe9;
+						margin-right:20px;
+						transition: all 0.3s ease 0s;
+						margin-bottom: 10px;
+						&:hover{
+							color:#fff;
+							text-decoration:none;
+						    background-color: #00639d;
+							border-color: #00639d;
+						}
+					}
+					.profilepage_btn-white{
+					    background-color: #fff;
+						border-color: #cccccc;
+						color: #cccccc;
+						&:hover{
+							color: #80cfef;
+							border-color: #80cfef;
+						    background-color: #fff;
+							text-decoration:none;
+						}
+					}
+				}
+				.profilepage_user-phototext{
+				    color: #cccccc;
+				    display: block;
+				    margin-top: 0;
+				}
+			}
+		}
+		.training-dates, .training-values{
+			position: relative;
+			.area{
+				position: relative;
+				width: 100%;
+				margin-bottom: 20px;
+				&.half{
+					width: 50%;
+					float: left;
+					label{
+						width: 30%;
+					}
+					input,.select2-container, select, input[type="checkbox"]{
+						position: relative;
+						display: block;
+						float: left;
+						width: 50%;
+						margin-left: 4%;
+						&[type="checkbox"]{
+							width: auto !important;
+						}
+					}
+				}
+			}
+		}
+		.training-values{
+			.field{
+				input[type="text"]{
+					width: 34%;
+				}
+				&.half{
+					.select2-container{
+						width: 10%;
+						text-align: center;
+					}
+				}
+			}		
+		}
+		& > .buttons{
+			overflow: hidden;
+			margin-left: 17%;
+			input[type="submit"]{
+				.border_radius(5px);
+				font-size:1.2rem;
+				border:none;
+				background:#4cbbe9;
+				color:#fff;
+				display: block;
+				float: left;
+				margin-right: 2%;
+				padding:7px 15px;
+				&:hover{
+					background: #4cbbe9 - #222;
+				}
+			}
+		}
+	}
+}

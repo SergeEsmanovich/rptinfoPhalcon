@@ -10,6 +10,24 @@ class ProfilController extends ControllerBase
 
     public function indexAction()
     {
-    
+     $this->view->setTemplateAfter('def');
     }
+    
+    public function educationAction()
+    {
+     $this->view->setTemplateAfter('def');
+    }
+    
+    public function contactsAction()
+    {
+     $this->view->setTemplateAfter('def');
+    }
+    
+    public function securityAction()
+    {
+     $this->view->setTemplateAfter('def');
+    }
+    
+  
+    
 } 

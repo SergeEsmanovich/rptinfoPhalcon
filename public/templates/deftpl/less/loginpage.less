@@ -1,0 +1,151 @@
+.login-page{
+	.border_box;
+	width:100%;
+	margin-bottom: 30px;
+	nav.head{
+		.border_box;
+		.border_radius_4(5px,5px,0,0);
+		.box_shadow(0,0,2px,#333);
+		position: relative;
+		width: 40%;
+		min-width:420px;
+		margin-left:auto;
+		margin-right:auto;
+		background:#00639d;
+		overflow: hidden;
+		ul{
+			.ul-clean;
+			overflow: hidden;
+			li{
+				.fll(auto);
+				&.active{
+					.box_shadow_inset(0px,0px,10px,#004974);
+				}
+				&:hover{
+					.box_shadow_inset(0px,0px,10px,#00507f);
+				}
+				i{
+					display: block;
+					padding: 8px 5px;
+					color:#fff;
+					font-size:1.4rem;
+					&.awesome{
+						font-size:1.8rem;
+						margin-left:15px;
+					}
+				}
+				a, span{
+					display: block;
+					padding: 8px 5px;
+					color:#fff;
+					font-size:1.4rem;
+					font-weight:bold;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	section.content{
+		.border_box;
+		.border_radius_4(0,0,6px,6px);
+		.box_shadow(0,0,2px,#333);
+		position: relative;
+		background: #fff;
+		margin-left:auto;
+		margin-right:auto;
+		padding: 10px 20px;
+		width:40%;
+		min-width:420px;
+		.scroll-wrapper{
+			min-height:100%;
+		}
+		.login-container{
+			width: 80%;
+			height: 100%;
+			margin: auto;
+			fieldset{
+				border:none !important;
+				.control-group{
+					margin-bottom: 20px;
+					label{
+						display: block;
+						font-weight:bold;
+						margin:5px 0;
+					}
+					input[type="text"], input[type="password"]{
+						.border_radius(10px);
+						.border_box;
+						.box_shadow_inset(1px,1px,2px,#aaa);
+						display: block;
+						padding: 8px 15px;
+						width: 100%;
+						border:solid 1px #bbb;
+						background:url('../images/required-star.png') right center #f9fafc no-repeat;
+					}
+					&.remember-me{
+						label, input{
+							display: block;
+							.fll(auto);
+						}
+						label{
+							margin-left: 5px;
+						}
+						input{
+							margin-top: 8px;
+						}
+					}
+				}
+				button.sign-in{
+					.border_radius(8px);
+					.border_box;
+					padding:11px 0;
+					width: 100%;
+					display: block;
+					margin-top: 30px;
+					background:#4cbbe9;
+					border:none;
+					cursor: pointer;
+					color:#fff;
+					text-align: center;
+					&:hover{
+						background: #4cbbe9 - #222;
+					}
+				}
+			}
+		}
+		ul.reminder{
+			.ul-clean;
+			.border_box;
+			display: block;
+			width: 100%;
+			margin:10px auto;
+			padding:0 10px;
+			li{
+				&#reset-login{
+					.fll(auto);
+				}
+				&#reset-password{
+					.flr(auto);
+				}
+				a{
+					text-decoration: none;
+					color:#13639a;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.account-empty{
+			position: relative;
+			margin-top: 15px;
+			text-align: center;
+			width: 100%;
+			height: 35px;
+			background: #efefef;
+			line-height: 35px;
+		}
+	}
+}

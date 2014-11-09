@@ -1,0 +1,121 @@
+/* 
+    Created on : 28.08.2014, 12:49:23
+    Author     : korolariya
+Модерация
+*/
+
+span.ico_new{
+    width: 17px;
+    height: 17px;
+    background: url(../images/moderate.png);
+    display: inline-block;
+    &.white{
+        background-position-y: -17px;  
+    }
+}
+span.ico_del{
+    @extend .ico_new;
+    background-position-x: -17px;
+}
+span.ico_comp{
+    @extend .ico_new;
+    background-position-x: -34px;
+}
+span.ico_red{
+    @extend .ico_new;
+    background-position-x: -51px;
+}
+
+.btn-check{
+
+    color:#777777;
+    background: url(../images/button_check.png); 
+    padding: 5px 16px 10px 16px;
+    &:hover{
+        text-decoration: none;
+        color:#777777;
+    }
+    i{
+        margin-left: 5px;
+    }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,cyrillic);
+
+li>a>text{
+    padding-left: 5px;
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+}
+
+li>a>i.fa.fa-inbox{
+    font-size: 20px;
+}
+
+li>span.level{
+    display: block;
+    padding: 8px 14px;
+    color: #fff;
+}
+div.title_mod{
+    color:#00639d;
+    background: #e2ecef;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+table.table.education{
+    td{
+        text-align: left;
+        border: none;
+        li{
+            padding-bottom:15px;  
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+.in_shadow_top{
+    -webkit-box-shadow: inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         inset 0px 4px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.registration-page section.content{
+    padding: 0px;  
+}
+
+.buttons{
+    padding: 10px;
+    padding-left:0px;
+    a.applay{
+        background: url(../images/applay.png);
+        background-repeat: no-repeat;
+        padding:  5px 25px 10px 25px;
+        color:#fff;
+        display:inline-block;
+        &:hover{
+            text-decoration: none;
+            background-position-y: -34px;
+        }
+        &:active, &.active{
+             background-position-y: -68px;
+        } 
+    }
+
+    a.miss{
+        @extend a.applay;
+        background: url(../images/miss.png);
+        padding: 5px 22px 10px 22px;       
+    }
+    a.send_mes{
+        @extend a.applay;
+        background: url(../images/submit.png);
+        padding: 5px 15px 10px 15px; 
+    }
+
+}
+
+

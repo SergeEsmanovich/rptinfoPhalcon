@@ -10,6 +10,6 @@ class OrdersController extends ControllerBase
 
     public function indexAction()
     {
-    
+     $this->view->setTemplateAfter('def');
     }
 } 

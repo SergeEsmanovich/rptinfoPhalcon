@@ -73,7 +73,9 @@
             <div class="fa fa-bars pull-left btn_header border_right handler" data-action="toggleClass" data-var="active" data-target="nav.sidebar"></div>
             {% endif %}
 
-            <div class="logo"><a href=""><img src="/templates/home/img/logo.png" alt=""></a></div>
+            <div class="logo">
+                {{ link_to('index', '<img src="/templates/home/img/logo.png" alt="">') }}
+            </div>
         </div>
         <div class="clear"></div>
         <div class="messages-template">

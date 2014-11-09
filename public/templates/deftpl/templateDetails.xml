@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+	version="3.2"
+	type="template"
+	client="site">
+	<name>deftpl</name>
+	<creationDate>15/07/14</creationDate>
+	<license>MM</license>
+	<version>1.0.0</version>
+	<description>dowlatow</description>
+	<positions>
+		<position>about</position>
+		<position>help</position>
+		<position>copyright</position>
+		<position>sidebar</position>
+		<position>head</position>
+		<position>breadcrumbs</position>
+		<position>top</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+
+</extension>

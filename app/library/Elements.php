@@ -42,33 +42,6 @@ class Elements extends Phalcon\Mvc\User\Component {
             ),
         )
     );
-    private $leftMenu = array(
-        'index' => array(
-            'caption' => 'Home',
-            'action' => 'index'
-        ),
-        'invoices' => array(
-            'caption' => 'Invoices',
-            'action' => 'index'
-        ),
-        'about' => array(
-            'caption' => 'About',
-            'action' => 'index'
-        ),
-        'contact' => array(
-            'caption' => 'Contact',
-            'action' => 'index'
-        ),
-        'admin' => array(
-            'caption' => 'Admin',
-            'action' => 'index'),
-        'socialarticle' => array(
-            'caption' => 'Korol',
-            'action' => 'index'),
-        'test' => array(
-            'caption' => 'Test',
-            'action' => 'index')
-    );
     private $_tabs = array(
         'Invoices' => array(
             'controller' => 'invoices',
@@ -97,33 +70,37 @@ class Elements extends Phalcon\Mvc\User\Component {
         )
     );
 
+    /**
+     * Вывод меню из БД
+     * @param type $alias string
+     */
     public function getModulMenu($alias) {
 
-        $where = array(
-            "bind" => array('alias' => $alias)
-        );
 
-        $modules = Modules::find($where);
+
+        $where = array("alias = '$alias'");
+        $modules = Modules::findFirst($where);
+        $controllerName = $this->view->getControllerName();
+        $actionName = $this->view->getActionName();
         ?>
         <ul class="">
-           <?php
-            foreach($modules as $modul)
-                 foreach($modul->menu as $item)
-                {
-            
-                ?>
-            <li>
+        <?php
+        foreach ($modules->menu as $item) {
+            if (($controllerName == $item->controllers->name)  &&  ($item->action == $actionName) ) {
+                echo '<li class="active">';
+            } else {
+                echo '<li>';
+            }
+            ?>
+
                 <?php
-                echo Phalcon\Tag::linkTo($item->controllers->name . '/' .'index',$item->icon.' '.$item->caption);
+                echo Phalcon\Tag::linkTo($item->controllers->name . '/' . $item->action, $item->icon . ' ' . $item->caption);
                 ?>
 
             </li>
-                <?php };?>
+            <?php }; ?>
         </ul>
         <?php
-        echo '<pre>';
-       // print_r($modul[0]->menu[0]->caption);
-        echo '</pre>';
     }
 
     /**
